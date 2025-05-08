@@ -1,0 +1,138 @@
+/* Style the navbar background and text */
+.navbar {
+  background-color: #28a745; /* Green background */
+}
+
+.navbar-nav .nav-link {
+  color: white !important; /* White text for links */
+  font-weight: 500; 
+}
+
+/* Hover effect for nav links */
+.navbar-nav .nav-link:hover {
+  color: #f8f9fa; /* Lighter white on hover */
+  background-color: rgba(255, 255, 255, 0.1); /* Slight background color on hover */
+  border-radius: 5px; /* Rounded corners for hover effect */
+}
+
+/* Navbar branding logo */
+.navbar-brand img {
+  height: 55px;
+  width: auto; /* Preserve the logo aspect ratio */
+}
+.banner{
+  height: 100vh;
+}
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1; /* So video stays behind other content */
+}
+
+/* Transparent Navbar Initially */
+/* Transparent Glass Navbar */
+.navbar {
+  background-color: rgba(255, 255, 255, 0.1); /* transparent white */
+  backdrop-filter: blur(10px); /* glass blur */
+  transition: background-color 0.4s ease, backdrop-filter 0.4s ease;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* subtle shadow */
+}
+
+/* Solid Navbar on Scroll */
+.navbar.scrolled {
+  background-color: #106A37 !important; /* Bootstrap green */
+  backdrop-filter: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+.card-hover {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.card-hover .overlay {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(25, 135, 84, 0.8); /* Bootstrap green with opacity */
+  transition: bottom 0.4s ease-in-out;
+  display: flex;
+  align-items: end;
+  padding: 20px;
+}
+
+.card-hover:hover .overlay {
+  bottom: 0;
+}
+
+.overlay-content {
+  color: white;
+}
+/* Fix navbar overlap by giving padding to body */
+body {
+  padding-top: 70px; /* Adjust according to navbar height */
+}
+
+/* Ensure video section doesn't overflow */
+
+.card-hover {
+  width: 100%;
+  max-width: 300px;
+}
+footer {
+  background-color: green; /* Bootstrap green or your choice */
+}
+/* .banner {
+  position: relative;
+} */
+.controls {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  display: flex;
+  gap: 10px;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 8px;
+  border-radius: 8px;
+}
+.controls button {
+  color: white;
+  background: transparent;
+  border: 1px solid white;
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+
+
+.uni{
+  font-size: 50px;
+  font-weight: 800;
+}
+
+
+.navy{
+  height: 300px;
+}
+
+
+
+
+#loader {
+  transition: opacity 0.5s ease;
+}
+#loader.fade-out {
+  opacity: 0;
+  visibility: hidden;
+}
+

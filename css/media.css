@@ -1,0 +1,94 @@
+@media (min-width:1400px) {
+  #typingText {
+    font-size: 2.5rem;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid white;
+    width: fit-content;
+  }
+  
+  .blink {
+    animation: blinkCursor 0.7s step-end infinite;
+  }
+  
+  @keyframes blinkCursor {
+    50% {
+      border-color: transparent;
+    }
+  }
+  
+}
+@media (min-width:1200px) and (max-width:1399px){
+  #typingText {
+    font-size: 2.5rem;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid white;
+    width: fit-content;
+  }
+  
+  .blink {
+    animation: blinkCursor 0.7s step-end infinite;
+  }
+  
+  @keyframes blinkCursor {
+    50% {
+      border-color: transparent;
+    }
+  }
+  
+}
+@media (min-width:992px) and (max-width:1199px){
+  #typingText {
+    font-size: 2.5rem;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid white;
+    width: fit-content;
+  }
+  
+  .blink {
+    animation: blinkCursor 0.7s step-end infinite;
+  }
+  
+  @keyframes blinkCursor {
+    50% {
+      border-color: transparent;
+    }
+  }
+  .navy{
+    width: 100%;
+  }
+}
+@media (min-width:768px) and (max-width:991px){
+   #typingText {
+  font-size: 2.5rem;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid white;
+  width: fit-content;
+}
+
+.blink {
+  animation: blinkCursor 0.7s step-end infinite;
+}
+
+@keyframes blinkCursor {
+  50% {
+    border-color: transparent;
+  }
+}
+.navy{
+  width: 100%;
+}
+}
+@media (min-width:576px) and (max-width:767px){
+  .navy{
+    width: 100%;
+  }
+}
+@media (max-width:576px){
+  .navy{
+    width: 100%;
+  }
+}

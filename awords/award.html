@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/css/bootstrap.min.css">
+    <title>Pakistan Army Awards</title>
+    <style>
+      *{
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: linear-gradient(to bottom, white, #e6f4ea);
+        color: #106A37;
+        /* padding: 20px; */
+      }
+      h1 {
+        text-align: center;
+        font-size: 3em;
+        color: #0b6623;
+        animation: pulse 2s infinite;
+      }
+      .main{
+        padding: 20px;
+      }
+      @keyframes pulse {
+        0% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0.6;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+        margin-top: 40px;
+      }
+      .card {
+        background: white;
+        border: 2px solid #106A37;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 100, 0, 0.2);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 16px rgba(0, 100, 0, 0.3);
+      }
+      .card img {
+        max-width: 100%;
+        display: block;
+        margin: 0 auto;
+        border-radius: 10px;
+      }
+      .card-content {
+        padding: 20px;
+        text-align: center;
+      }
+      .officer-img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border: 5px solid #0b6623;
+        margin: 10px auto;
+      }
+      .card p.details {
+        font-size: 0.9em;
+        color: #155724;
+        margin-top: 5px;
+      }
+      .awords {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border: 2px solid #0b6623;
+        margin: 10px auto;
+      }
+      footer {
+        background-color: #106A37;
+        color: white;
+        text-align: center;
+        padding: 30px;
+        font-size: 1rem;
+        animation: fadeInUp 2s ease-out;
+        margin-top: 35px;
+      }
+      /* Style the navbar background and text */
+.navbar {
+  background-color: green; /* Green background */
+}
+
+.navbar-nav .nav-link {
+  color: white !important; /* White text for links */
+  font-weight: 500; 
+}
+
+/* Hover effect for nav links */
+.navbar-nav .nav-link:hover {
+  color: #f8f9fa; /* Lighter white on hover */
+  background-color: rgba(255, 255, 255, 0.1); /* Slight background color on hover */
+  border-radius: 5px; /* Rounded corners for hover effect */
+}
+
+/* Navbar branding logo */
+.navbar-brand img {
+  height: 55px;
+  width: auto; /* Preserve the logo aspect ratio */
+}
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top" style="background-color: #106A37;">
+      <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="../images/logo.png" alt="" style="height: 55px; width: 110px;"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+  
+              <ul class="navbar-nav px-2">
+                  <li class="nav-item">
+                      <a class="nav-link active text-white" aria-current="page" href="../index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link text-white" href="../pak/Fighter jets.html">Fighter Jets</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link text-white" href="./award.html">Awards</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link text-white" href="../Pakistan/ibad.html">Atomic Power</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link text-white" href="../nuclear power/nuclear.html">Nuclear Power</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+  <div class="main">
+    <h1>Pakistan Army Awards</h1>
+    <div class="grid">
+      <div class="card">
+        <div class="card-content">
+          <img src="./images/nishani haider.webp" class="awords" />
+          <h2>Nishan-e-Haider</h2>
+          <p>Highest award for bravery.</p>
+          <p class="details">Year: 1999 | War: Kargil War</p>
+          <img src="./images/nishanay haider winner.webp" class="officer-img" />
+          <p><strong>Captain Karnal Sher Khan</strong></p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-content">
+          <img src="./images/Hilal-e-Jurat.webp" class="awords" />
+          <h2>Hilal-e-Jurat</h2>
+          <p>Second highest military decoration.</p>
+          <p class="details">Year: 1971 | War: Indo-Pak War</p>
+          <img src="./images/hilal e jurat winner.webp" class="officer-img" />
+          <p><strong>Major Shabbir Sharif</strong></p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-content">
+          <img src="./images/Sitara-e-Jurat.webp" class="awords" />
+          <h2>Sitara-e-Jurat</h2>
+          <p>Acts of courage under fire.</p>
+          <p class="details">Year: 1965 | War: Indo-Pak War</p>
+          <img src="./images/Sitara-e-Jurat winner.webp" class="officer-img" />
+          <p><strong>Major Raja Aziz Bhatti</strong></p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-content">
+          <img src="./images/Tamgha-i-Jurat.webp" class="awords" />
+          <h2>Tamgha-e-Jurat</h2>
+          <p>Gallantry and devotion to duty.</p>
+          <p class="details">Year: 1971 | War: Indo-Pak War</p>
+          <img src="./images/Tamgha-e-Jurat winner.webp" class="officer-img" />
+          <p><strong>Sawar Muhammad Hussain</strong></p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-content">
+          <img src="./images/Sitara-e-Basalat.webp" class="awords" />
+          <h2>Sitara-e-Basalat</h2>
+          <p>Acts of valor not in battle.</p>
+          <p class="details">Year: 1958 | War: Peacetime Operation</p>
+          <img src="./images/imtiaz medal winner.webp" class="officer-img" />
+          <p><strong>Major Tufail Mohammad</strong></p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-content">
+          <img src="./images/Tamgha-e-Basalat.webp" class="awords" />
+          <h2>Tamgha-e-Basalat</h2>
+          <p>Bravery in peacetime.</p>
+          <p class="details">Year: 1999 | War: Kargil War</p>
+          <img
+            src="./images/tamgha-e-basalat winner.webp"
+            class="officer-img"
+          />
+          <p><strong>Havaldar Lalak Jan</strong></p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-content">
+          <img src="./images/Imtiaz Medal.webp" class="awords" />
+          <h2>Imtiaz Medal</h2>
+          <p>Service with distinction.</p>
+          <p class="details">Year: 1959 | Role: Leadership</p>
+          <img src="./images/imtiaz medal winner.webp" class="officer-img" />
+          <p><strong>Field Marshal Ayub Khan</strong></p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-content">
+          <img src="./images/Sitara-e-Imtiaz.webp" class="awords" />
+          <h2>Sitara-e-Imtiaz</h2>
+          <p>Excellence in military service.</p>
+          <p class="details">Year: 2016 | Role: Army Chief</p>
+          <img src="./images/sitara-e-imtiaz winner.webp" class="officer-img" />
+          <p><strong>General Raheel Sharif</strong></p>
+        </div>
+      </div>
+    </div>
+    </div>
+    <footer>🇵🇰 Awords Of Pakistan | Strength, Peace & Sovereignty</footer>
+
+    <script src="../javascript/js/bootstrap.min.js"></script>
+  </body>
+</html>

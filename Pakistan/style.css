@@ -1,0 +1,147 @@
+.flag{
+    background-color: #106A37;
+}
+.custom-nav {
+  border-bottom: 3px solid rgb(5, 5, 5);
+  transition: border-bottom 0.3s ease, opacity 0.3s ease;
+}
+
+.custom-nav.hide-line {
+  border-bottom: none;
+}
+.section-title {
+  font-weight: bold;
+  font-size: 2.5rem;
+  color: #1c1c1c;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.card {
+position: relative;
+overflow: hidden;
+transition: transform 0.3s ease-in-out;
+}
+
+.card-img-top {
+height: 200px;
+object-fit: cover;
+transition: transform 0.3s ease-in-out;
+}
+
+.card {
+position: relative;
+overflow: hidden;
+transition: transform 0.3s ease-in-out;
+}
+
+.original-img {
+height: 200px;
+object-fit: cover;
+transition: opacity 0.3s ease-in-out;
+}
+
+.hover-img {
+height: 200px;
+object-fit: cover;
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+opacity: 0;
+transition: opacity 0.3s ease-in-out;
+}
+
+.card-body {
+text-align: center;
+position: relative;
+z-index: 1;
+transition: opacity 0.3s ease-in-out;
+}
+
+.card-title, .card-text {
+transition: opacity 0.3s ease-in-out;
+}
+
+.card:hover .original-img {
+opacity: 0.3; 
+}
+
+.card:hover .hover-img {
+opacity: 1; 
+}
+
+.card:hover .card-body {
+opacity: 1; 
+}
+
+.card:hover {
+transform: translateY(-10px); 
+}
+
+.card-body .card-title {
+font-size: 1.25rem;
+font-weight: bold;
+color: #333;
+}
+
+.card-body .card-text {
+font-size: 1rem;
+color: #666;
+}
+
+.Text{
+font-weight: 700;
+
+text-shadow: 0 6px 10px rgba(0, 0, 0, 0.961)
+}
+.Text1{
+margin-top: 10px;
+font-weight: 700;
+font-size: 35px;
+text-shadow: 4px 6px 10px rgb(74, 71, 71);
+}
+.Text5{
+  margin-top: 10px;
+  font-weight: 700;
+  font-size: 35px;
+  text-shadow: 2px 6px 10px rgb(248, 244, 244);
+  }
+
+.Text2{
+
+text-shadow: 0 4px 6px rgba(0, 0, 0, 0.961)
+}
+.Video{
+  margin: auto;
+  max-width: 800px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+h2{
+  color: rgb(81, 77, 77);
+  font-size: 40px;
+}
+
+
+/* Style the navbar background and text */
+.navbar {
+  background-color: #28a745; /* Green background */
+}
+
+.navbar-nav .nav-link {
+  color: white !important; /* White text for links */
+  font-weight: 500; 
+}
+
+/* Hover effect for nav links */
+.navbar-nav .nav-link:hover {
+  color: #f8f9fa; /* Lighter white on hover */
+  background-color: rgba(255, 255, 255, 0.1); /* Slight background color on hover */
+  border-radius: 5px; /* Rounded corners for hover effect */
+}
+
+/* Navbar branding logo */
+.navbar-brand img {
+  height: 55px;
+  width: auto; /* Preserve the logo aspect ratio */
+}

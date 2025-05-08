@@ -1,0 +1,219 @@
+body {
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+    background-color: #e9f5ec;
+    color: #024731;
+    overflow-x: hidden;
+    box-sizing: border-box;
+  }
+
+  /* Header Section */
+  header {
+    background-color:  #106A37;
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    animation: fadeIn 2s ease-out;
+  }
+  .custom-nav {
+    border-bottom: 3px solid rgb(9, 8, 8);
+    transition: border-bottom 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .custom-nav.hide-line {
+    border-bottom: none;
+  }
+
+  header h1 {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 20px 30px;
+    border-radius: 10px;
+    font-size: 3rem;
+    transition: transform 0.5s ease;
+  }
+
+  header h1:hover {
+    transform: scale(1.1);
+  }
+
+  /* Section Style */
+  .section {
+    padding: 60px 20px;
+    max-width: 1100px;
+    margin: auto;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInUp 1.5s forwards;
+  }
+
+  .section:nth-of-type(2) {
+    animation-delay: 0.2s;
+  }
+  .section:nth-of-type(3) {
+    animation-delay: 0.4s;
+  }
+  .section:nth-of-type(4) {
+    animation-delay: 0.6s;
+  }
+  .section:nth-of-type(5) {
+    animation-delay: 0.8s;
+  }
+  .section h2 {
+    color: #006400;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .section p {
+    line-height: 1.7;
+    font-size: 1.2rem;
+    text-align: justify;
+  }
+
+  /* Images */
+  img {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Timeline */
+  .timeline {
+    border-left: 3px solid #006400;
+    padding-left: 20px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+
+  .timeline-event {
+    margin-bottom: 20px;
+    padding-left: 20px;
+    position: relative;
+    transition: all 0.3s ease;
+  }
+
+  .timeline-event::before {
+    content: "";
+    position: absolute;
+    left: -8px;
+    top: 5px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #006400;
+  }
+
+  .timeline-event:hover {
+    background-color: #e9f5ec;
+    box-shadow: 0px 5px 15px rgba(0, 100, 0, 0.3);
+    transform: scale(1.05);
+  }
+
+  .timeline-event h4 {
+    color: #006400;
+    margin: 0 0 5px;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  .timeline-event p {
+    margin: 0;
+    font-size: 1.1rem;
+  }
+
+  /* Footer */
+  footer {
+    background-color: #106A37;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    font-size: 1rem;
+    animation: fadeInUp 2s ease-out;
+  }
+
+  /* Keyframes for Animations */
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  /* Media Queries for Responsiveness */
+  @media (max-width: 600px) {
+    header h1 {
+      font-size: 1.8rem;
+      padding: 15px;
+    }
+
+    .section h2 {
+      font-size: 2rem;
+    }
+
+    .section p {
+      font-size: 1rem;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+  .loading {
+    width: 100vw;
+    height: 100vh;
+    background-color: #052425;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .loading img {
+    width: 200px;
+    height: 150px;
+  }
+  /* Style the navbar background and text */
+.navbar {
+  background-color: #28a745; /* Green background */
+}
+
+.navbar-nav .nav-link {
+  color: white !important; /* White text for links */
+  font-weight: 500; 
+}
+
+/* Hover effect for nav links */
+.navbar-nav .nav-link:hover {
+  color: #f8f9fa; /* Lighter white on hover */
+  background-color: rgba(255, 255, 255, 0.1); /* Slight background color on hover */
+  border-radius: 5px; /* Rounded corners for hover effect */
+}
+
+/* Navbar branding logo */
+.navbar-brand img {
+  height: 55px;
+  width: auto; /* Preserve the logo aspect ratio */
+  margin-top: 0px;
+}

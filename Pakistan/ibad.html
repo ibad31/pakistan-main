@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atomic Power</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  
+ 
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light sticky-top custom-nav" style="background-color: #106A37;" id="main-nav">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="../images/logo.png" alt="" style="height: 55px; width: 110px;"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+
+            <ul class="navbar-nav px-2">
+                <li class="nav-item">
+                    <a class="nav-link active text-white" aria-current="page" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="../pak/Fighter jets.html">Fighter Jets</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="../awords/award.html">Awards</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="./ibad.html">Atomic Power</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="../nuclear power/nuclear.html">Nuclear Power</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+  <header class="flag text-white py-5">
+  <div class="container text-center">
+        <h1 class=" Text display-4"><b>Atomic Power</b></h1>
+
+      <p class=" Text2 lead">Unlocking the Potential of Atomic Energy</p>
+    </div>
+  </header>
+
+  
+  <section class="section-content bg-light">
+    <div class="container">
+      <h2 class=" Text1 section-title" style="font-size: 60px;">What is Atomic Power?</h2>
+      <p class="text-center fs-5">Atomic power, or nuclear energy, refers to the energy released during nuclear reactions. It powers cities, fuels advanced technologies, and plays a significant role in the future of energy solutions, atomic energy helps generate electricity and even treat cancer. Let's dive into some of the key aspects of atomic power!</p>
+
+      
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+        <div class="col">
+          <div class="card shadow-sm border-0 position-relative">
+            <img src="images/header/atom3.webp" class="card-img-top original-img" alt="Nuclear Fission">
+            <img src="images/header/atom4.jpg" class="card-img-top hover-img" alt="Nuclear Fission Hover">
+            <div class="card-body">
+              <h5 class="card-title">Nuclear Fission</h5>
+              <p class="card-text">Nuclear fission is the process where the nucleus of an atom splits, releasing large amounts of energy, which is harnessed  power plants.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm border-0 position-relative">
+            <img src="images/header/atom1.jpg" class="card-img-top original-img" alt="Nuclear Fusion">
+            <img src="images/header/atom2.jpg" class="card-img-top hover-img" alt="Nuclear Fusion Hover">
+            <div class="card-body">
+              <h5 class="card-title">Nuclear Fusion</h5>
+              <p class="card-text">Fusion is the process where two light atomic nuclei combine to form a heavier nucleus, releasing massive amounts of ga that fuels the sun!</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm border-0 position-relative">
+            <img src="images/header/atom2.jpg" class="card-img-top original-img" alt="Medical Uses">
+            <img src="images/header/atom3.webp" class="card-img-top hover-img" alt="Medical Uses Hover">
+            <div class="card-body">
+              <h5 class="card-title">Atomic Energy in Medicine</h5>
+              <p class="card-text">Atomic energy is used in medical applications like radiation therapy, which helps treat cancer and other serious illnesses with high precision.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm border-0 position-relative">
+            <img src="images/header/atom4.jpg" class="card-img-top original-img" alt="Atomic Research">
+            <img src="images/header/atom1.jpg" class="card-img-top hover-img" alt="Atomic Research Hover">
+            <div class="card-body">
+              <h5 class="card-title">Atomic Research</h5>
+              <p class="card-text">Ongoing research in atomic science leads to new energy solutions, space exploration advancements, and innovations in quantum technology.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+
+
+
+<section class="py-5 bg-light" id="atomic-video">
+  <div class="container text-center">
+    <h2 class="mb-4 fw-bold Text5" style="font-size: 60px; background-color: #106A37;   padding: 15px 0; color: rgb(4, 4, 4);">How Atomic Energy Works</h2>
+    <p class="mb-4 text-muted fs-3">Watch this short animated video to understand the science behind nuclear power generation.</p>
+    
+    <div class="ratio ratio-16x9">
+      <iframe 
+        src="https://www.youtube.com/embed/rcOFV4y5z8c" 
+        title="How Nuclear Energy Works" 
+        allowfullscreen>
+      </iframe>
+    </div>
+  </div>
+</section>
+
+
+
+  <footer class="flag text-white py-3">
+    <div class="container text-center">
+      <p>&copy; 2025 Atomic Power. All rights reserved. <br><b>Create by  Muhammad Ibad</b></p>
+    </div>
+  </footer>
+
+<script>
+  const nav = document.getElementById('main-nav');
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 0) {
+      nav.classList.add('hide-line');
+    } else {
+      nav.classList.remove('hide-line');
+    }
+  });
+</script>
+  
+
+
+  <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script> -->
+  <script src="../javascript/js/bootstrap.min.js"></script>
+  
+</body>
+</html>
